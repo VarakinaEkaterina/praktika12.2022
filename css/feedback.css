@@ -1,0 +1,99 @@
+.contact_from{
+    padding: 60px 0 60px 0;
+}
+
+.contact_from h1,p{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.line{
+    width: 300px;
+    height: 2px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgba(67, 86, 255, 0.264);
+}
+
+.contact_from h1{
+    color: black;
+}
+
+form p{
+    text-align: left;
+}
+
+.contact_wrapper{
+    margin: auto;
+    color: #636363;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_inputs{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 163px;
+    border-radius: 10px;
+}
+
+input, textarea{
+    border: 1px solid #999999;
+    margin-top: 5px;
+}
+
+.button_block{
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=submit]{
+    width: 165px;
+    height: 40px;
+    background-color: rgba(67, 86, 255, 0.8);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(67, 86, 255, 0.4);
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+#h1{
+    color:#3a3a3a;
+}
+
+#m1{
+    display: flex;
+    flex-direction: column;
+}
+

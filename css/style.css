@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Raleway-Black;
+    src: url("/css/fonts/Raleway-Regular.ttf");
+}
+
+.logo {
+margin: 10px;
+}
+
+#container1{
+    text-align: justify;
+    margin: 30px 17% 0px 17%;
+}
+
+.text{
+   font: 20px; 
+}
+
+.text1{
+   text-align: justify;
+   margin-top: 30px;
+   
+}
+
+.body{
+    font-family: Raleway-Black;
+}
+
+#footer{
+   margin-left: 9%;
+   margin-right: 10%;
+}
+
+#header{
+    font-size: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.636);
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.link-secondary {
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+.link-secondary:hover {
+    color: rgba(110, 110, 110, 0.488);
+    text-decoration: none;
+}
+
+#count{
+    color: #fff;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#timer{
+    width: 60px;
+}
