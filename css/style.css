@@ -1,6 +1,6 @@
 @font-face {
     font-family: Raleway-Black;
-    src: url("./css/fonts/Raleway-Regular.ttf");
+    src: url("/css/fonts/Raleway-Regular.ttf");
 }
 
 .logo {
@@ -12,14 +12,13 @@ margin: 10px;
     margin: 30px 17% 0px 17%;
 }
 
-.text{
-   font: 20px; 
-}
-
 .text1{
    text-align: justify;
    margin-top: 30px;
-   
+}
+
+p{
+    font-size: 20px;
 }
 
 .body{
@@ -37,7 +36,8 @@ margin: 10px;
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.636);
-    font-size: 18px;
+    font-size: 20px;
+
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -51,13 +51,16 @@ margin: 10px;
 }
 
 .link-secondary {
-    color: rgb(110, 110, 110);
-    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    transition: filter .3s ease-in-out;
+    filter: grayscale(99%);
+    margin: 2px;
+    margin-bottom: 10px;
 }
 
 .link-secondary:hover {
-    color: rgba(110, 110, 110, 0.488);
-    text-decoration: none;
+    filter: grayscale(0%);
 }
 
 #count{
@@ -68,4 +71,9 @@ margin: 10px;
 
 #timer{
     width: 60px;
+}
+
+.input0{
+    margin: 30px;
+    margin-left: 50px;
 }
