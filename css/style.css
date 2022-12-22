@@ -50,8 +50,8 @@ p{
 }
 
 .link-secondary {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     transition: filter .3s ease-in-out;
     filter: grayscale(99%);
     margin-bottom: 10px;
@@ -76,12 +76,32 @@ p{
 }
 
 .input0{
-    margin: 30px;
-    margin-left: 50px;
+    margin: 10px;
 }
 
 .container{
-    padding-left: 0px;
+    padding-left: 4px;
 }
 
+.in{
+    opacity: .6;
+    transition: opacity .3s ease-in-out;
+    width: 40px;
+}
 
+.in:hover{
+    opacity: 1;
+}
+
+.navbar-brand{
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.navbar-brand:hover{
+    opacity: 0.7;
+}
+
+.pao{
+    color: rgba(0, 0, 0, 0.481);
+}

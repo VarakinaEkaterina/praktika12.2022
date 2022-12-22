@@ -104,6 +104,8 @@
 .photo:hover img {
     transform: scale(1.8);
     box-shadow: 0 24px 28px rgba(0, 0, 0, 0.637);
+    position: relative;
+    z-index: 1;
 }
 
 .text1{

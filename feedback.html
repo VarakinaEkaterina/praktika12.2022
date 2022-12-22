@@ -9,17 +9,30 @@
     <link rel="stylesheet" href="./css/feedback.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Ленэнерго</title>
   </head>
-  <body class="body">
+  <body class="body" onload="timer()">
     <header id="header">
       <nav
+        id="con"
         class="navbar navbar-expand-lg navbar-dark"
         style="background-color: rgb(67, 86, 255)"
       >
         <div class="container">
+          <div id="timer">
+            <span id="count">0</span>
+            <audio id="sound">
+              <source src="/mp3/Notific.mp3" type="audio/mp3" />
+            </audio>
+          </div>
           <a href="./index.html" class="navbar-brand" style="margin-right: 50px"
-            ><img src="./img/logo.png" alt="" class="logo" />Ленэнерго</a
+            ><img src="./img/logo.png" alt="" class="logo" />ЛЕНЭНЕРГО</a
           >
           <button
             class="navbar-toggler"
@@ -35,9 +48,6 @@
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav me-auto mb-3 mb-lg-0">
               <li class="nav-item">
-                <a href="./authorization1.html" class="nav-link">Вход</a>
-              </li>
-              <li class="nav-item">
                 <a href="./index.html" class="nav-link">Главная</a>
               </li>
               <li class="nav-item">
@@ -47,14 +57,23 @@
                 <a href="./aboutus.html" class="nav-link">О нас</a>
               </li>
             </ul>
-            <form action="#" class="d-flex">
+            <form action="#" class="d-flex form-floating input">
               <input
                 type="search"
-                placeholder="Поиск..."
                 class="form-control me-2"
+                id="floatingInput"
+                placeholder="поиск"
               />
+              <label class="lab" for="floatingInput">Поиск</label>
               <button class="btn btn-outline-light" type="submit">Поиск</button>
             </form>
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="input0">
+                <a href="./authorization1.html" class="nav-link"
+                  ><img class="in" src="./img/icons8-войти-32.png" alt=""
+                /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -102,34 +121,35 @@
       style="background-color: rgb(255, 255, 255)"
     >
       <div class="row" id="footer">
-        <div class="col-12 col-md">
-          <h6><a href="./index.html" class="link-secondary">Главная</a></h6>
+        <div class="col-3 col-md">
+          <a href="./index.html" class="link-secondary"
+            ><img src="./img/logo1.png" class="link-secondary" alt=""
+          /></a>
         </div>
-        <div class="col-12 col-md">
-          <h6>
-            <a href="./feedback.html" class="link-secondary">Обратная связь</a>
-          </h6>
+        <div class="col-3 col-md">
+          <a href="./feedback.html" class="link-secondary"
+            ><img src="./img/pngwing.com.png" class="link-secondary" alt=""
+          /></a>
         </div>
-        <div class="col-12 col-md">
-          <h6>
-            <a
-              href="https://t.me/rosseti_lenenergo"
-              target="_blank"
+        <div class="col-3 col-md">
+          <a
+            href="https://t.me/rosseti_lenenergo"
+            target="_blank"
+            class="link-secondary"
+            ><img
+              src="./img/kisspng-computer-icons-scalable-vector-graphics-portable-n-ico-onlive-steemkr-5ba3aa0deda570.1220255815374525579734.png"
               class="link-secondary"
-              >Соц.сети</a
-            >
-          </h6>
+              alt=""
+          /></a>
         </div>
-        <div class="col-12 col-md">
-          <h6>
-            <a
-              href="https://www.gosuslugi.ru/"
-              target="_blank"
-              class="link-secondary"
-              >Гос. услуги</a
-            >
-          </h6>
+        <div class="col-3 col-md">
+          <a href="https://www.gosuslugi.ru/" target="_blank"
+            ><img class="link-secondary" src="./img/free-png.ru-492.png" alt=""
+          /></a>
         </div>
+      </div>
+      <div class="pao">
+        2016 - 2022 © Публичное акционерное общество «Россети Ленэнерго»
       </div>
     </footer>
 
@@ -143,6 +163,22 @@
           "&body=" +
           encodeURIComponent(document.getElementById("i2").value);
         return false;
+      }
+    </script>
+    <script type="text/javascript">
+      var sec = 0;
+      function timer() {
+        sec++;
+        document.getElementById("count").innerHTML = sec;
+        setTimeout("timer()", 1000);
+        if (sec == 10) {
+          sec = 0;
+          const audio = new Audio();
+          audio.src = "./mp3/Notific.mp3";
+          audio.play();
+        } else {
+          document.getElementById("count").innerHTML = `0${sec}`;
+        }
       }
     </script>
   </body>
