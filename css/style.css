@@ -12,6 +12,10 @@ margin: 10px;
     margin: 30px 17% 0px 17%;
 }
 
+@media (max-width: 1000px) and (min-width:0px){
+    #container1 {margin: 10px;}
+ }
+
 .text1{
    text-align: justify;
    margin-top: 30px;
@@ -51,11 +55,10 @@ p{
 }
 
 .link-secondary {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: filter .3s ease-in-out;
     filter: grayscale(99%);
-    margin: 2px;
     margin-bottom: 10px;
 }
 
@@ -68,6 +71,10 @@ p{
     font-size: 30px;
     margin: 20px;
 }
+
+@media (max-width: 1200px) and (min-width:0px){
+    #count{display: none;}
+ }
 
 #timer{
     width: 60px;
