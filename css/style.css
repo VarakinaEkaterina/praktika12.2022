@@ -1,10 +1,5 @@
-@font-face {
-    font-family: Raleway-Black;
-    src: url("/css/fonts/Raleway-Regular.ttf");
-}
-
 .logo {
-margin: 10px;
+    margin: 10px;
 }
 
 #container1{
@@ -26,7 +21,7 @@ p{
 }
 
 .body{
-    font-family: Raleway-Black;
+    font-family: 'Roboto', sans-serif;
 }
 
 #footer{
@@ -72,7 +67,7 @@ p{
     margin: 20px;
 }
 
-@media (max-width: 1200px) and (min-width:0px){
+@media (max-width: 1200px){
     #count{display: none;}
  }
 
@@ -85,7 +80,8 @@ p{
     margin-left: 50px;
 }
 
-#con{
-    display: flex;
-    flex-wrap: nowrap;
+.container{
+    padding-left: 0px;
 }
+
+
